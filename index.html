@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Parlour</title>
+</head>
+
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Welcome to Pizza Parlor!</h1>
+      <h2>The Best Pizza in Cincinnati!</h2>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="well">
+      <h2>Ciao, amici!</h2>
+      <p>Founded in 1910, we are one of the oldest pizzerias in Cincinnati. We pride ourselves on traditional recipes,
+        proven over time. Our ingredients are always fresh, sourced from local farms. And, we're a family-owned business
+        for over 6 generations! </p>
+      <p>To order by phone, call us during business hours (M-Sa, 11am - 9pm) at: 513-555-5555.</p>
+      <p>To order online or for delivery, please use the form below.</p>
+    </div>
+    <form id="orderForm">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Please fill in your name and address:</h3>
+          <div class="form-group">
+            <label for="name">A name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h3>Please complete your order below:</h3>
+          <label for="size">Select your pizza size:</label>
+          <select class="form-control" id="size">
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+          </select>
+          <br>
+          <label for="crust">Select your crust:</label>
+          <select class="form-control" id="crust">
+            <option value="1">Thin</option>
+            <option value="3">Thick</option>
+            <option value="5">Chicago</option>
+          </select>
+          <br>
+          <label for="cheese">Select the amount of cheese:</label>
+          <select class="form-control" id="cheese">
+            <option value="0">None</option>
+            <option value="3">Normal</option>
+            <option value="5">Insane</option>
+          </select>
+          <br>
+          <label for="toppings">Select your toppings:</label><br>
+          <input type="checkbox" name="toppings" value="3"> Pepperoni</input>
+          <input type="checkbox" name="toppings" value="3"> Mushrooms</input>
+          <input type="checkbox" name="toppings" value="4"> Peppers</input>
+          <input type="checkbox" name="toppings" value="3"> Ham<br>
+          <input type="checkbox" name="toppings" value="3"> Pineapple</input>
+          <input type="checkbox" name="toppings" value="4"> Anchovies</input>
+          <input type="checkbox" name="toppings" value="1"> Onions</input>
+          <input type="checkbox" name="toppings" value="2"> Tomatoes<br>
+          <input type="checkbox" name="toppings" value="5"> Pancetta</input>
+          <input type="checkbox" name="toppings" value="3"> Olives</input>
+          <input type="checkbox" name="toppings" value="2"> Corn</input>
+          <input type="checkbox" name="toppings" value="4"> Bacon</input>
+          <br>
+          <br>
+          <button type="submit" class="btn-info">Submit Order:</button>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </form>
+    <div id="output">
+      <div class="panel">
+        <h2>Thanks for waiting, <span class="name"></span>.</h2>
+        <h3>Your pizza will be delivered shortly to the following address:</h3>
+        <ul>
+          <li class="address"></li>
+        </ul>
+        <p class="receipt">Please pay your server: $<span class="price"></span>.</p>
+        <p>(This price does not include gratuity.)</p>
+      </div>
+      <p>Click here to go back to the form page:</p>
+      <button class="btn-warning" onClick="window.location.reload();">Return to order form.</button>
+      <br>
+      <br>
+    </div>
+  </div>
+</body>
+
+</html>

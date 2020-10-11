@@ -1,0 +1,63 @@
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://clipartmag.com/images/cartoon-pizza-man-clipart-37.jpg");
+  height: 400px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  color: White;
+}
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: large;
+}
+#output {
+  display: none;
+}
+
+.col-md-6 {
+  width: 400px;
+}
+
+
+body {
+font-family: sans-serif;
+
+}
+
+#output {
+  display: none;
+
+}
+
+span {
+  font-weight: bold;
+}
+
+.receipt {
+  font-size: 20px;
+
+}
+.price {
+  font-size: 20px;
+}
+
+ul li {
+  font-size: large;
+}
